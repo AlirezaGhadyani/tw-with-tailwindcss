@@ -9,7 +9,11 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx"
+    "./card": "./src/card/index.tsx",
+    "./conditionWrap": "./src/conditionWrap/index.tsx",
+    "./image": "./src/image/index.tsx",
+    "./ratio": "./src/ratio/index.tsx",
+    "./typography": "./src/typography/index.tsx"
   },
   "license": "MIT",
   "scripts": {
@@ -19,7 +23,8 @@
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "clsx": "^2.1.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
